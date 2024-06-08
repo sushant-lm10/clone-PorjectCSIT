@@ -946,13 +946,11 @@ opacity: 0.8;
 @media screen and (max-width:830px){
 /* for hamburger menu */
 .header{
-  padding:  35px 19px;
-      align-items: center;
-
+  padding: 35px 19px;
+  align-items: center;
 }
 .hamburger{
   display: block;
-
 }
 .nav__hamburger{
 
@@ -969,6 +967,8 @@ opacity: 0.8;
     top: 69px;
     left: 0;
     width: 100%;
+text-align: center;
+height: 50%;
   }
   .nav__small__screen ul {
 flex-direction: column;
@@ -980,11 +980,12 @@ padding: 20px 5px;
     top: 30px;
     width: 55%;
     max-width: 350px;
-    padding: 57px 10px;
+    padding: 55px 10px;
     z-index: 40;
   }
   .svg__icon{
 flex-shrink: 0;  } 
+
 
 }
 .navigation__flex__row{
