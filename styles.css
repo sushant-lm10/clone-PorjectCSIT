@@ -99,21 +99,33 @@ header ul li a::before{
   left: 0;
 top: 60px;
 z-index: 10;
+
 }
+
+
 .sideBar__css{
   display: none;
 }
 .fixed-span {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 4px 8px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border-radius: 5px;
+  top: 83px;
+  left: 30px;
   cursor: pointer;
   z-index: 7;
-  /* animation: slideIn 0.5s ease-in-out; */
+  font-size: 35px;
+  color: black;
+  animation: glow 1.5s infinite alternate, scale 3s infinite;
+}
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f, 0 0 80px #00f, 0 0 160px #00f;
+  }
+  100% {
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 160px #0ff, 0 0 320px #0ff;
+  }
 }
 .nav h1 {
   font-size: 1.5em;
@@ -978,7 +990,7 @@ padding: 20px 5px;
     top: 30px;
     width: 55%;
     max-width: 350px;
-    padding: 55px 10px;
+    padding: 70px 10px;
     z-index: 40;
   }
   .svg__icon{
