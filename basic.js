@@ -319,7 +319,7 @@ side__bar__btn.addEventListener("click",()=>{
 
     if(side__bar.classList.contains("sideBar__css")){
         const span = document.createElement('span');
-        span.innerText = 'openSidebar';
+        span.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-left"></i>`;
         span.className = 'fixed-span';
         
         span.addEventListener('click', () => {
@@ -333,15 +333,11 @@ side__bar__btn.addEventListener("click",()=>{
 
            }
         });
-
         document.body.appendChild(span);
-        
-
     }
-    
-   
-    
+
 })
+
 
 
 
