@@ -241,21 +241,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const topics = {
         semester1: [
-            { title: 'Mathematics', badge: 14, description: 'Introduction to Calculus', image: '/images/courses/maths1.jpg' },
-            { title: 'Physics', badge: 75, description: 'Schrodinger\'s equation xa tara cat xaina.', image: '/images/courses/physics-1.jpg' },
-            { title: 'C-Programming', badge: 100, description: 'Basic Concepts in programming', image: '/images/courses/cprogramming-1.jpg' },
-            { title: 'Digital Logic', badge: 50, description: 'Introduction to 0 and 1', image: '/images/courses/digitallogic-1.jpg' },
-            { title: 'Introduction to Information Technology', badge: 30, description: 'Title says all.', image: '/images/courses/iit-1.gif' }
+            { title: 'Mathematics', badge: 14, description: 'Introduction to Calculus', image: '/PN1/images/courses/maths1.jpg' },
+            { title: 'Physics', badge: 75, description: 'Schrodinger\'s equation xa tara cat xaina.', image: '/PN1/images/courses/physics-1.jpg' },
+            { title: 'C-Programming', badge: 100, description: 'Basic Concepts in programming', image: '/PN1/images/courses/cprogramming-1.jpg' },
+            { title: 'Digital Logic', badge: 50, description: 'Introduction to 0 and 1', image: '/PN1/images/courses/digitallogic-1.jpg' },
+            { title: 'Introduction to Information Technology', badge: 30, description: 'Title says all.', image: '/PN1/images/courses/iit-1.gif' }
         ],
         semester2: [
-            { title: 'Advanced Mathematics', badge: 20, description: 'Linear Algebra and Differential Equations', image: '/images/courses/advanced_math.jpg' },
-            { title: 'Thermodynamics', badge: 45, description: 'Principles of Thermodynamics', image: '/images/courses/thermodynamics.jpg' },
-            { title: 'Organic Chemistry', badge: 60, description: 'Introduction to Organic Chemistry', image: '/images/courses/organic_chemistry.jpg' },
-            { title: 'Data Structures', badge: 55, description: 'Fundamentals of Data Structures', image: '/images/courses/data_structures.jpg' },
-            { title: 'Communication Skills', badge: 40, description: 'Effective Communication Techniques', image: '/images/courses/communication_skills.jpg' }
+            { title: 'Advanced Mathematics', badge: 20, description: 'Linear Algebra and Differential Equations', image: '/PN1/images/courses/advanced_math.jpg' },
+            { title: 'Thermodynamics', badge: 45, description: 'Principles of Thermodynamics', image: '/PN1/images/courses/thermodynamics.jpg' },
+            { title: 'Organic Chemistry', badge: 60, description: 'Introduction to Organic Chemistry', image: '/PN1/images/courses/organic_chemistry.jpg' },
+            { title: 'Data Structures', badge: 55, description: 'Fundamentals of Data Structures', image: '/PN1/images/courses/data_structures.jpg' },
+            { title: 'Communication Skills', badge: 40, description: 'Effective Communication Techniques', image: '/PN1/images/courses/communication_skills.jpg' }
         ],
         semester3: [
-            { title: 'Discrete Mathematics', badge: 25, description: 'Theory of Computation and Graph Theory', image: '/images/courses/discrete_math.jpg' }
+            { title: 'Discrete Mathematics', badge: 25, description: 'Theory of Computation and Graph Theory', image: '/PN1/images/courses/discrete_math.jpg' }
         ]
     };
     
@@ -300,7 +300,7 @@ const hamburger__menu = document.querySelector(".hamburger");
 hamburger__menu.addEventListener("click",()=>{
     nav__menu.classList.toggle("nav__small__screen");
     if (nav__menu.classList.contains("nav__small__screen")) {
-        hamburger__menu.innerHTML = '<i class="fas fa-times" style="color: crimson;"></i>';
+        hamburger__menu.innerHTML = '<i class="fas fa-times"></i>';
 
     } else {
         hamburger__menu.innerHTML = '<i class="fas fa-bars"></i>';
@@ -310,27 +310,24 @@ hamburger__menu.addEventListener("click",()=>{
 //<---for side-Bar menu --->
 const side__bar__btn = document.querySelector(".svg__icon");
 const side__bar = document.querySelector(".navigation");
+const playground__section =  document.querySelector(".playground");
+const reviewSection = document.querySelector(".review-section");
+const courses = document.querySelector(".courses");
+const contribution = document.querySelector(".contribution");
+
+
 side__bar__btn.addEventListener("click",()=>{
 
     side__bar.classList.add("sideBar__css");
-    const playground__section =  document.querySelector(".playground");
-
-    // playground__section.style.marginLeft = "14vw";
-
     if(side__bar.classList.contains("sideBar__css")){
         const span = document.createElement('span');
         span.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-left"></i>`;
         span.className = 'fixed-span';
         
         span.addEventListener('click', () => {
-            // sideBar logic ---->here<----
-           side__bar.classList.remove("sideBar__css")
+           side__bar.classList.remove("sideBar__css");
            if(!side__bar.classList.contains("sideBar__css")){
             span.style.display = "none";
-          
-        //    playground__container.style.display = "flex";
-
-
            }
         });
         document.body.appendChild(span);
@@ -338,9 +335,18 @@ side__bar__btn.addEventListener("click",()=>{
 
 })
 
+// dark-light mode
+const toggleBtn = document.querySelector(".theme__icon");
+toggleBtn.onclick = toggleTheme;
 
+function toggleTheme() {
+    document.body.classList.toggle("darkTheme");
+    if(document.body.classList.contains("darkTheme")){
+       toggleBtn.src = "images/sun.png";
+    }
+    else   toggleBtn.src = "images/moon.png";
 
-
+}
 
    
   
