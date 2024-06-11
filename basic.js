@@ -342,9 +342,9 @@ toggleBtn.onclick = toggleTheme;
 function toggleTheme() {
     document.body.classList.toggle("darkTheme");
     if(document.body.classList.contains("darkTheme")){
-       toggleBtn.src = "images/sun.png";
+       toggleBtn.src = "sun.png";
     }
-    else   toggleBtn.src = "images/moon.png";
+    else   toggleBtn.src = "moon.png";
 
 }
 
