@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/a0f96472cb.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSIT PROJECT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+.blog-header {
+    text-align: center;
+    margin-top: 20px;
+}
+.blog-header h1 {
+    font-size: 2.5rem;
+}
+.blog-header p {
+    color: #0056b3;
+    font-size: 1rem;
+}
+.blogs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between grid items */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the container */
+}
+.blog-card {
+    box-shadow: rgba(19, 18, 18, 0.1) 0px 5px 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, font-size 0.2s, color 0.2s;
+}
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-card-content {
+    padding: 15px;
+}
+.blog-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.blog-detail {
+    font-size: 0.9rem;
+    color: #666;
+}
+.blog-tag {
+    color: #0056b3;
+    font-size: 0.875rem;
+}
+.blog-card:hover {
+    transform: scale(1.01);
+    border: 1px solid white;
+    color: rgb(13, 106, 142);
+    position: relative;
+    z-index: 10;
+    font-size: 1.05rem; 
+}
+
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"><h1>LOGO</h1></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Editor</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="themebtn">
+          <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
+        </div>
+      </header>
+
+      <!-- main -->
+      <div class="blog-header">
+        <p>Study guys !!!</p>
+        <h1>Read our blog</h1>
+    </div>
+      <div class="blogs-container">
+        <div class="blog-card">
+            <img src="/PN1/images/elon.jpg" alt="Blog Image 1">
+            <div class="blog-card-content">
+                <p class="blog-title">This is blog no oneeee</p>
+                <p class="blog-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="blog-tag">Design Oggy</p>
+            </div>
+        </div>
+        <!-- new blog -->
+        <div class="blog-card" >
+            <img src="/PN1/images/papajack.jpg" alt="Blog Image 2">
+            <div class="blog-card-content">
+                <p class="blog-title">Papa is duniya kaa papa</p>
+                <p class="blog-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="blog-tag">Design</p>
+            </div>
+        </div>
+        <!-- new blog -->
+        <div class="blog-card">
+            <img src="/PN1/images/elon.jpg" alt="Blog Image 3">
+            <div class="blog-card-content">
+                <p class="blog-title">Blog no third , third hshsh</p>
+                <p class="blog-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="blog-tag">Tech</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="/PN1/images/elon.jpg" alt="Blog Image 1">
+            <div class="blog-card-content">
+                <p class="blog-title">This is blog no oneeee</p>
+                <p class="blog-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="blog-tag">Design Oggy</p>
+            </div>
+        </div>
+    
+        <!-- new blog -->
+    <div class="blog-card">
+        <img src="/PN1/images/elon.jpg" alt="blog-img">
+        <div class="blog-card-content">
+        <p class="blog-title">Hero aalom</p>
+        <p class="blog-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ut qui facilis quibusdam </p>
+        <p class="blog-tag">-pseudo</p>
+        </div>
+        </div>
+    
+      <!-- new blog -->
+      <div class="blog-card">
+        <img src="/PN1/images/elon.jpg" alt="blog-img">
+        <div class="blog-card-content">
+        <p class="blog-title">Hero aalom</p>
+        <p class="blog-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ut qui facilis quibusdam mollitia dolor et commodi possimus impedit odit expedita illo a rem nostrum autem laborum eius, repudiandae delectus sequi pariatur enim. Harum eligendi eaque voluptatem vitae laudantium sit architecto assumenda velit, dicta iste repudiandae amet, quasi repellendus magnam maxime molestias, dolorem suscipit incidunt iure nobis quia? Nulla, porro!</p>
+        <p class="blog-tag">-pseudo</p>
+        </div>
+        </div>
+    <!-- new blog -->
+
+       <div class="blog-card">
+        <img src="/PN1/images/elon.jpg" alt="blog-img">
+        <div class="blog-card-content">
+        <p class="blog-title">Hero aalom</p>
+        <p class="blog-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ut qui facilis quibusdam mollitia dolor et commodi possimus impedit odit expedita illo a rem nostrum autem laborum eius, repudiandae delectus sequi pariatur enim. Harum eligendi eaque voluptatem vitae laudantium sit architecto assumenda velit, dicta iste repudiandae amet, quasi repellendus magnam maxime molestias, dolorem suscipit incidunt iure nobis quia? Nulla, porro!</p>
+        <p class="blog-tag">-pseudo</p>
+        </div>
+        </div>
+   <!-- new blog -->
+   <div class="blog-card">
+    <img src="/PN1/images/elon.jpg" alt="blog-img">
+    <div class="blog-card-content">
+    <p class="blog-title">Hero aalom</p>
+    <p class="blog-detail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ut qui facilis quibusdam mollitia dolor et commodi possimus impedit odit expedita illo a rem nostrum autem laborum eius, repudiandae delectus sequi pariatur enim. Harum eligendi eaque voluptatem vitae laudantium sit architecto assumenda velit, dicta iste repudiandae amet, quasi repellendus magnam maxime molestias, dolorem suscipit incidunt iure nobis quia? Nulla, porro!</p>
+    <p class="blog-tag">-pseudo</p>
+    </div>
+    </div>
+</div>
+    <script src="basic.js"></script>
+  </body>
+</html>
