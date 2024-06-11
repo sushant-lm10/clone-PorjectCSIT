@@ -5,9 +5,8 @@
     <script src="https://kit.fontawesome.com/a0f96472cb.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSIT PROJECT</title>
-    <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  </head>
-
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
   </head>
   <body>
     <div class="container">
@@ -15,15 +14,15 @@
         <div class="logo"><h1>LOGO</h1></div>
         <nav class="nav nav__hamburger">
           <ul>
-            <li><a href="#" onclick="location.reload()">Home</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Editor</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">LEARN</a></li>
+            <li><a href="#">EDITOR</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="#">ABOUT</a></li>
           </ul>
         </nav>
         <div class="themebtn">
-          <button onclick="fun()"><img src="theme.png" alt="theme" style="font-style: italic;"/></button>
+          <button><img src="images/moon.png" alt="theme" style="font-style: italic;" class="theme__icon"/></button>
         </div>
         <div class="hamburger" style="cursor: pointer;">
           <i class="fas fa-bars toggle__icon" ></i>
@@ -32,15 +31,15 @@
 
       <!-- main -->
 
+     
       <main class="main">
-        <section class="section navigation nav-sticky">
+        <section class="section navigation nav-sticky ">
           <nav class="nav">
-            <div style="display: flex;gap: 8px;" class="navigation__flex__row">
-            <h1>Intro to Computer Science 
-            </h1>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" class="svg__icon">
-              <line x1="0" y1="23" x2="23" y2="1" stroke="red" stroke-width="6"/>
-              <line x1="1" y1="1" x2="23" y2="23" stroke="red" stroke-width="6"/>
+            <div style="display: flex;gap: 22px;" class="navigation__flex__row">
+            <h1>Intro to Computer Science</h1>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" class="svg__icon">
+              <line x1="0" y1="23" x2="23" y2="1" stroke="white" stroke-width="4"/>
+              <line x1="1" y1="1" x2="23" y2="23" stroke="white" stroke-width="4"/>
           </svg>
             </div>
             <div class="wrapper">
@@ -113,8 +112,6 @@
       </section>
     </div>
       </main>
-
-
       <!-- content -->
       <section class="review-section">
         <div class="review-section-info">
@@ -142,7 +139,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <div class="img-container">
-                        <img src="maths1.jpg" alt="Mathematics" class="img-fluid">
+                        <img src="/images/courses/maths1.jpg" alt="Mathematics" class="img-fluid">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Mathematics <span class="badge float-end">14</span></h5>
@@ -163,20 +160,20 @@
         </div>
         <div class="contribution-gallary">
           <div class="gallary-shape">
-            <img src="elon.jpg" alt="Contributor">
+            <img src="/PN1/images/elon.jpg" alt="Contributor">
             <div class="info">
               <p class="name">Nischal Pokhrel</p>
               <p class="job">Software Engineer</p>
             </div>
           </div>
           <div class="gallary-shape">
-            <img src="nischal1.jpg" alt="Contributor">
+            <img src="/PN1/images/nischal1.jpg" alt="Contributor">
             <div class="info"><p class="name">Nischal Basnet</p>
             <p class="job">Notes Collector</p>
           </div>
           </div>
           <div class="gallary-shape">
-            <img src="Kumar_Nagarkoti_(cropped).jpg" alt="Contributor">
+            <img src="/PN1/images/Kumar_Nagarkoti_(cropped).jpg" alt="Contributor">
             <div class="info">
               <p class="name">John Doe</p>
               <p class="job">DevOps Engineer</p>
@@ -188,6 +185,7 @@
       </section>
       <!-- footer-section -->
       <footer class="footer">
+        <div class="inner-footer">
         <div class="about">
           <h1>About Us</h1>
           <p>
@@ -236,7 +234,7 @@
       <!-- Your embedded Google form goes here -->
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfm0DjBSpijs-KM4kWph87ZgWYwSMM8X09h_MNMd6C6EurPpg/viewform?embedded=true" class="gform" width="640" height="460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    </div>
   </div>
-       
+</div>
       </footer>
       
     </div>
