@@ -315,11 +315,26 @@ const reviewSection = document.querySelector(".review-section");
 const courses = document.querySelector(".courses");
 const contribution = document.querySelector(".contribution");
 
+const arrowBtn = document.createElement("span");
+  arrowBtn.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-left"></i>`;
+        arrowBtn.className = 'fixed-span';
+        document.body.appendChild(arrowBtn);
+arrowBtn.addEventListener("click",()=>{
+side__bar.style.display = "block";
+  
+})
 
+side__bar__btn.addEventListener("click",()=>{
+  side__bar.style.display = "none";
+
+})
+
+//===== old sideBar logic =====//
+/*
 side__bar__btn.addEventListener("click",()=>{
 
     side__bar.classList.add("sideBar__css");
-    if(side__bar.classList.contains("sideBar__css")){
+    if(!side__bar.classList.contains("sideBar__css")){
         const span = document.createElement('span');
         span.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-left"></i>`;
         span.className = 'fixed-span';
@@ -333,7 +348,8 @@ side__bar__btn.addEventListener("click",()=>{
         document.body.appendChild(span);
     }
 
-})
+})   */
+//===== old sideBar logic =====//
 
 // dark-light mode
 const toggleBtn = document.querySelector(".theme__icon");
@@ -342,9 +358,9 @@ toggleBtn.onclick = toggleTheme;
 function toggleTheme() {
     document.body.classList.toggle("darkTheme");
     if(document.body.classList.contains("darkTheme")){
-       toggleBtn.src = "sun.png";
+       toggleBtn.src = "images/sun.png";
     }
-    else   toggleBtn.src = "moon.png";
+    else   toggleBtn.src = "images/moon.png";
 
 }
 
