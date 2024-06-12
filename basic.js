@@ -316,7 +316,7 @@ const courses = document.querySelector(".courses");
 const contribution = document.querySelector(".contribution");
 
 const arrowBtn = document.createElement("span");
-  arrowBtn.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-left"></i>`;
+  arrowBtn.innerHTML =`<i class="fa-sharp fa-solid fa-arrow-right"></i>`;
         arrowBtn.className = 'fixed-span';
         document.body.appendChild(arrowBtn);
 arrowBtn.addEventListener("click",()=>{
