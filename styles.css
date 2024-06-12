@@ -787,11 +787,25 @@ transition:0.3s;
 .footer {
   background-color:#235372;
   color:var(--primary-color);
-padding:20px;
-  height: 70vh;
+  padding: 8vh 0;
+}
+.inner-footer{
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  /* border: solid; */
+  /* justify-content:space-between; */
+  width: 90%;
+  /* max-width: 950px; */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 70px;
+
+}
+.about{
+  width: 50%;
+}
+
+.contact{
+  width: 40%;
 }
 .footer p{
   font-family:Arial, Helvetica, sans-serif
@@ -800,20 +814,20 @@ padding:20px;
   border-radius: 15px;
 }
 
-.footer .about,
+/* .footer .about,
 .contact {
-  width: 50%;
-  padding: 10px;
-}
+  width: 50%; 
+   padding: 10px;
+} */
 .about{
   border-right:5px solid var(--primary-color);
 }
 .contact{
-  width: 50vw;
+  /* width: 50vw; */
 }
 
 .contact h1 {
-  display: inline-block; 
+  /* display: inline-block;  */
 }
 
 .btncnt {
@@ -843,8 +857,8 @@ padding:20px;
 }
 
 .contact-form {
-  max-width: 400px;
-  margin: 0 auto;
+  /* max-width: 400px; */
+  /* margin: 0 auto; */
 }
 
 .contact-form h2 {
@@ -884,7 +898,7 @@ button[type="submit"]:hover {
 
 /* about form  */
 .about {
-  max-width: 45%;
+  /* max-width: 45%; */
 }
 
 .about h1 {
@@ -923,7 +937,7 @@ button[type="submit"]:hover {
 }
 
 .contact {
-  max-width: 45%;
+  /* max-width: 45%; */
 }
 
 .contact h1 {
@@ -1108,7 +1122,21 @@ padding: 40px 20px;
     .logo{
       flex-grow: 1;
     }
-   
+    .inner-footer{
+      /* gap: 14px; */
+    }
+    .about{
+      flex-basis: 100%;
+      border-right:none;
+      margin: 0;
+      text-align: center;
+
+    }
+    .contact{
+      flex-basis: 100%;
+    text-align: center;
+    margin: 0;
+    }
  
   }
 
@@ -1127,7 +1155,9 @@ padding: 40px 20px;
 
     }
 
-   
+    .fixed-span{
+      font-size: 20px;
+    }
     .review-section{
       text-align: center;
       width: 90%;
